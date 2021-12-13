@@ -1,11 +1,14 @@
-import './App.css';
+// eslint-disable-next-line no-use-before-define
+import React from 'react'
 
-function App() {
+import './App.css'
+
+function App () {
   return (
     <div className="App">
       <p>Harry Potter app</p>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
