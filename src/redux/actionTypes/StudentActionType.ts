@@ -8,16 +8,16 @@ export enum ActionType {
     GET_STUDENTS_FAIL = 'GET_STUDENTS_FAIL'
 }
 
-interface actionPending {
+export interface actionPending {
     type: ActionType.GET_STUDENTS_PENDING
 }
 
-interface actionSuccess {
+export interface actionSuccess {
     type: ActionType.GET_STUDENTS_SUCCESS;
     payload: Student[]
 }
 
-interface actionFail {
+export interface actionFail {
     type: ActionType.GET_STUDENTS_FAIL;
     payload: string
 }
