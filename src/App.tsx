@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import './App.css'
+import StudentCard from './components/StudentCard'
 import { getStudents } from './redux/actionCreators/StudentsActionCreator'
 import Student from './redux/Student'
 import { useTypedSelector } from './UseTypeSelector'
@@ -18,13 +19,18 @@ function App () {
 
   return (
     <div className="App">
+      <div className='flex flex-wrap flex-row justify-center items-start content-start'>
       {
-      entities.map((entity: Student) => {
-        return (
-          <p key={entity.name}>{ entity.name }</p>
-        )
-      })
+        entities
+          .slice(0, 10)
+          .map((entity: Student) => {
+            return (
+              <StudentCard key={entity.name} student={entity} />
+            )
+          })
       }
+      </div>
+
     </div>
   )
 }
