@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-use-before-define
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
 import './App.css'
 import StudentCard from './components/StudentCard'
 import { getStudents } from './redux/actionCreators/StudentsActionCreator'
@@ -25,7 +26,9 @@ function App () {
           .slice(0, 10)
           .map((entity: Student) => {
             return (
-              <StudentCard key={entity.name} student={entity} />
+              <Link to={`/student/${entity.name}`} key={entity.name}>
+                <StudentCard student={entity} />
+              </Link>
             )
           })
       }
