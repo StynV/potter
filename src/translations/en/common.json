@@ -1,0 +1,12 @@
+{
+    "name": "Name",
+    "species": "Species",
+    "gender": "Gender",
+    "house": "House",
+    "dateOfBirth": "Date of birth",
+    "ancestry": "Ancestry",
+    "eyeColour": "Eye colour",
+    "hairColour": "Hair colour",
+    "patronus": "Patronus",
+    "actor": "Actor"
+}

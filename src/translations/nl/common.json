@@ -1,0 +1,12 @@
+{
+    "name": "Naam",
+    "species": "Soort",
+    "gender": "Gender",
+    "house": "Huis",
+    "dateOfBirth": "Geboortedatum",
+    "ancestry": "Voorouders",
+    "eyeColour": "Kleur van ogen",
+    "hairColour": "Haarkleur",
+    "patronus": "Patronus",
+    "actor": "Acteur"
+}
