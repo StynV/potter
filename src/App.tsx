@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
-import './App.css'
 import StudentCard from './components/StudentCard'
 import { getStudents } from './redux/actionCreators/StudentsActionCreator'
 import Student from './redux/Student'
@@ -19,7 +18,7 @@ function App () {
   if (loading) return <p>Loading...</p>
 
   return (
-    <div className="App">
+    <div className="text-center">
       <div className='flex flex-wrap flex-row justify-center items-start content-start'>
       {
         entities
